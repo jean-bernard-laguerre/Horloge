@@ -5,8 +5,8 @@ def Afficher_heures(heures, minutes, secondes, mode):
     if mode == 1:
 
         if heures > 12:
-            heures -= 12
-            print(f"{heures :0>2}:{minutes :0>2}:{secondes :0>2} PM")
+
+            print(f"{heures-12 :0>2}:{minutes :0>2}:{secondes :0>2} PM")
 
         else:
             print(f"{heures :0>2}:{minutes :0>2}:{secondes :0>2} AM")
@@ -17,7 +17,7 @@ def Afficher_heures(heures, minutes, secondes, mode):
 
 def Alarme(alarme,heure):
     if alarme[0] == heure[0] and alarme[1] == heure[1] and alarme[2] == heure[2]:
-        print("Alarm goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrr!!!!!!!!!!")
+        print("Message alarme")
 
 
 def mode_affichage():
